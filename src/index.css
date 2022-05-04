@@ -35,17 +35,76 @@ code {
 
 .Pokemon .name, .TrainedPokemon .name {
   font-size: 1.3rem;
+  padding-bottom: 5px;
 }
 
 .Trainer {
   display: flex;
   align-items: baseline;
   background: lightblue;
-
+  flex-direction: column;
 }
 
-.Trainer .name {
+.Trainer .info{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid grey;
+  width: 100%;
+  align-items: baseline;
+  box-shadow: 1px 5px 5px grey;
+}
+
+.Trainer .info .name {
   margin: 1rem;
   color: unset;
   font-size: 1.5rem;
+}
+
+.PokemonList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ownedPokemon {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.OwnTrainedPokemon .Pokemon {
+  background-color: azure;
+}
+.OwnTrainedPokemon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.OwnTrainedPokemon .Exp{
+  color: red;
+  font-size: 20px;
+}
+.OwnTrainedPokemon .Lvl{
+  color: orangered;
+  font-size: 20px;
+  padding-top: 10px;
+
+}
+
+.typeButton {
+  width: fit-content;
+  height: 35px;
+  background-color: cadetblue;
+  color: #000;
+  border-radius: 5px;
+  margin: 5px;
+  border: none;
+}
+.typeButton:hover {
+  background-color: #5f9ed6;
+  cursor: pointer;
+}
+
+.active {
+  background-color: blue;
+  color: #FFF;
 }
