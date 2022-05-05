@@ -11,10 +11,8 @@ code {
 }
 
 .name {
-  color: red;
+  color: #084887;
 }
-
-.App {}
 
 .list {
   display: flex;
@@ -30,7 +28,7 @@ code {
   width: fit-content;
   padding: 1rem;
   margin: 1rem;
-  border: 1px solid black;
+  border: 1px solid #000;
 }
 
 .Pokemon .name, .TrainedPokemon .name {
@@ -41,17 +39,18 @@ code {
 .Trainer {
   display: flex;
   align-items: baseline;
-  background: lightblue;
+  background: #F7F5FB;
   flex-direction: column;
 }
 
 .Trainer .info{
   display: flex;
   flex-direction: row;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #084887;
   width: 100%;
   align-items: baseline;
-  box-shadow: 1px 5px 5px grey;
+  box-shadow: 1px 2px 4px #084887;
+  color: #F58A07;
 }
 
 .Trainer .info .name {
@@ -63,6 +62,7 @@ code {
 .PokemonList {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .ownedPokemon {
@@ -71,7 +71,7 @@ code {
 }
 
 .OwnTrainedPokemon .Pokemon {
-  background-color: azure;
+  background-color: #BDC3DB;
 }
 .OwnTrainedPokemon {
   display: flex;
@@ -80,31 +80,48 @@ code {
   padding-bottom: 10px;
 }
 .OwnTrainedPokemon .Exp{
-  color: red;
+  color: #F58A07;
   font-size: 20px;
 }
 .OwnTrainedPokemon .Lvl{
-  color: orangered;
+  color: #F58A07;
   font-size: 20px;
   padding-top: 10px;
 
 }
 
+.OwnTrainedPokemon input{
+  width: 100px;
+  border-radius: 15px;
+  border: 1px solid #000;
+  margin-top: 10px;
+  margin-bottom: -5px;
+  text-align: center;
+}
+
 .typeButton {
-  width: fit-content;
+  width: 60px;
   height: 35px;
-  background-color: cadetblue;
-  color: #000;
+  background-color: #084887;
+  color: #F7F5FB;
   border-radius: 5px;
   margin: 5px;
   border: none;
 }
 .typeButton:hover {
-  background-color: #5f9ed6;
+  background-color: #3E99F4;
   cursor: pointer;
 }
 
 .active {
-  background-color: blue;
+  background-color: #F9AB55;
   color: #FFF;
+}
+
+.Filters {
+  width: 45vw;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
 }

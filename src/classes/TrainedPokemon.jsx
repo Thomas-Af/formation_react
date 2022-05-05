@@ -7,7 +7,8 @@ class TrainedPokemon extends Pokemon {
   this.state = {
    exp: 0,
    lvl: 0,
-   levelLimit: 1000
+   levelLimit: 300,
+   idInterval: null
   };
 
   this.incrementExp = this.incrementExp.bind(this);
@@ -24,6 +25,18 @@ class TrainedPokemon extends Pokemon {
     levelLimit: this.state.levelLimit + 500
    })
   }
+ }
+
+ componentDidMount() {
+  const idInterval = setInterval(this.incrementExp, 1000);
+
+  this.setState({
+   idInterval
+  })
+ }
+
+ componentWillUnmount() {
+  clearInterval(this.state.idInterval);
  }
 
  render() {
